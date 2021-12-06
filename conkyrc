@@ -1,0 +1,42 @@
+conky.config = {
+    background = yes,
+    border_width = 0,
+    
+    cpu_avg_samples = 5,
+    net_avg_samples = 5,
+    diskio_avg_samples = 5,
+
+    default_color = 'fefefe',
+    default_outline_color = 'fefefe',
+    default_shade_color = 'fefefe',
+
+    lua_load = './script.lua',
+    lua_draw_hook_pre = "main",
+
+    draw_borders = false,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+
+    minimum_height = 1080,
+    minimum_width = 1920,
+
+    no_buffers = false,
+    double_buffer = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    update_interval = 1.0,
+    show_graph_scale = true,
+    show_graph_range = false,
+
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'normal',
+    own_window_transparent = false,
+    own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+    own_window_argb_visual = false,
+}
+conky.text = [[
+    ${image ./caffeine.png -p 512,147}
+]]
